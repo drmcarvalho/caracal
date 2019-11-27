@@ -85,8 +85,6 @@ $app->action('/api/hello', 'GET', function () use ($app) {
 });
 ```
 
----
-
 # Redirecionamento
 
 O rediretionamento é feito pela função redirect onde o parametro `to` é para onde vai ser redirecionado, por padrão é definido o código 302 para o redirecionamento, através do parametro `stop` pode encerrar o a ação ou continuar o processamento.
