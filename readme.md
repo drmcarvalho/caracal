@@ -1,6 +1,6 @@
 # O que é o Caracal?
 
-Caracal é um simples e extensivo nano-framework Action Based que permite você desenvolver pequenas aplicações Web e APIs RESTful de maneira rapida e fácil. Ele possui o [Medoo](https://medoo.in/) como um database framework para gerenciar a manipular o banco de dados.
+Caracal é um simples e extensivo nano-framework Action Based que permite você desenvolver pequenas aplicações Web e APIs RESTful de maneira rapida e fácil. Ele possui o [Medoo](https://medoo.in/) como um database framework para gerenciar e manipular o banco de dados.
 
 # License
 
