@@ -2,13 +2,10 @@
 
 Caracal é um simples e extensivo nano-framework Action Based que permite você desenvolver pequenas aplicações Web e APIs RESTful de maneira rapida e fácil. Ele possui o [Medoo](https://medoo.in/) como um database framework para gerenciar a manipular o banco de dados.
 
----
-
 # License
 
 Caracal é licenciado sobre a licença MIT.
 
----
 # Instalação
 
 1. Baixe os arquivos `Caracal.php` e `Medoo.php` e crie a pasta template no diretório root no qual vai conter seus templates/views.
@@ -56,8 +53,6 @@ Finalmente, no arquivo index.php inicie o framework:
 ```php
 $app->run();
 ```
-
----
 
 # Roteamento
 
