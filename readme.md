@@ -61,6 +61,11 @@ $app->action('/hello', 'GET', function() {
 });
 ```
 
+Inclua o php `actions.php` no arquivo `app.php`:
+```php
+require_once 'actions.php';
+```
+
 Finalmente, no arquivo index.php inclua o php `app.php` e inicie o framework:
 ```php
 require_once 'app.php';
@@ -70,7 +75,7 @@ $app->run();
 
 # Roteamento
 
-O roteamento é feito mapeando uma URL por um callback na função `action` do framework.
+O roteamento é feito mapeando uma URL para um callback na função `action` do framework.
 
 ```php
 $app->action('/hello', 'GET', function () {
@@ -79,7 +84,7 @@ $app->action('/hello', 'GET', function () {
 ```
 ## Views
 
-Para retornar uma view também:
+Para retornar uma view use a função `render` como no exemplo:
 
 ```php
 $app->action('/home', 'GET', function () use ($app) {
@@ -91,7 +96,7 @@ O Caracal vai buscar pelo template especificado na pasta `templates` através do
 
 ## JSON
 
-Responstas em json podem ser rotornadas também através da função `json()`:
+Respostas em json podem ser retornadas através da função `json()` como no exemplo:
 
 ```php
 $app->action('/api/hello', 'GET', function () use ($app) {	
@@ -101,7 +106,7 @@ $app->action('/api/hello', 'GET', function () use ($app) {
 
 # Redirecionamento
 
-O rediretionamento é feito pela função redirect onde o parametro `to` é para onde vai ser redirecionado, por padrão é definido o código 302 para o redirecionamento, através do parametro `stop` pode encerrar o a ação ou continuar o processamento.
+O Redirecionamento é feito pela função `redirect` onde o parametro `to` é para onde vai ser redirecionado, por padrão é definido o código 302 para o redirecionamento, através do parametro `stop` pode encerrar o a ação ou continuar o processamento.
 
 ```php
 $app->action('/teste', 'GET', function () use ($app) {
