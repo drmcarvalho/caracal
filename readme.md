@@ -49,8 +49,10 @@ $app->action('/hello', 'GET', function() {
 });
 ```
 
-Finalmente, no arquivo index.php inicie o framework:
+Finalmente, no arquivo index.php inclua o php `app.php` e inicie o framework:
 ```php
+require_once 'app.php';
+
 $app->run();
 ```
 
