@@ -31,12 +31,24 @@ RewriteRule ^ index.php [L]
 
 3. Crie seu arquivo `app.php`.
 
-Inclua o framework defina uma instancia para ele:
+Inclua o framework e defina uma instancia para ele:
 ```php
 require_once 'Caracal.php';
 
 $app = new Caracal();
 ```
+Ou se você preferir pode passar o array com as opções do seu banco de dados que o Caracal vai setar a instancia do Medoo internamente:
+```php
+$app = new Caracal([
+	'database_type' => 'mysql',
+	'database_name' => 'minhabase',
+	'server' => 'localhost',
+	'username' => 'meuusuario',
+	'password' => 'minhasenha'
+]);
+```
+Veja na [documentação do Medoo](https://medoo.in/api/new) como conecta-lo com os SGBDs.
+
 Crie seu arquivo de ações (rotas):
 ```php
 require_once 'actions.php';
