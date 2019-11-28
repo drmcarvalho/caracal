@@ -93,7 +93,7 @@ $app->action('/home', 'GET', function () use ($app) {
 
 O Caracal vai buscar pelo template especificado na pasta `templates` através do nome do primeiro argumento.
 
-## JSON
+## Json
 
 Respostas em json podem ser retornadas através da função `json()` como no exemplo:
 ```php
