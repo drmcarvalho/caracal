@@ -19,10 +19,8 @@ class Caracal {
 	private $routes = array();
 	private $codes = array();	
 
-	public function __construct(array $options=[]) {
-		if ($options) {
-			$this->database = new Medoo($options);
-		}
+	public function __construct() {
+		
 	}	
 
 	public function action($path, $method, $callback) {
